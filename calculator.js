@@ -13,6 +13,17 @@ class Calculator{    /* this is the class*/
         return Number(numOne)-Number(numTwo)
         
     }
+    multiply(numOne,numTwo){
+        return Number(numOne)*Number(numTwo)
+
+    }
+    division(numOne,numTwo){
+        return Number(numOne)/Number(numTwo);
+    }
+    reminder(numOne,numTwo){
+        return  Number(numOne)%Number(numTwo);
+
+    }
     setCurrentNum(value){
         this.currentNum+=value
     }
@@ -63,7 +74,11 @@ const signObject={
     ,
     SUBSTRACT:"-",
 
-    MULTIPLY:"x"
+    MULTIPLY:"x",
+
+    DIVISION:"÷",
+
+    REMINDER:"%"
 }
 
 
@@ -137,6 +152,14 @@ const keyclickhandler =(num)=>{
         case "SUBSTRACT":
                 newNumArr.unshift(calculator.substract(numOne,numTwo))
                  break;
+        case "MULTIPLY":
+              newNumArr.unshift(calculator.multiply(numOne,numTwo));
+              break;
+        case "DIVISION":
+            newNumArr.unshift(calculator.division(numOne,numTwo))
+        case "REMINDER":
+            newNumArr.unshift(calculator.reminder(numOne,numTwo))
+            break;
             
 
         default:
