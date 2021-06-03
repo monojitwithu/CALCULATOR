@@ -206,6 +206,17 @@ const actionkeyclickhandler=(action)=>{
     function Check(){
         console.log("working")
     }
+
+
+
+    function dayThemeClickhandler(){
+        console.log("working")
+        var daythemeDisplay=document.querySelector(".calc-container");
+        var daythemeKeys=document.querySelector(".keypad-container")
+        daythemeDisplay.classList.add("day-display")
+        daythemeKeys.classList.add("day-keys")
+
+    }
 //need to add more functions
 
     

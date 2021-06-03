@@ -117,5 +117,14 @@ td{
     color: springgreen;
 }
 .just:hover{
-    background: blue;
+    background-color: #867ae9;
+}
+
+
+.day-display{
+    background-color: #929aab;
+
+}
+.day-keys{
+    background-color: #eeeeee;
 }
